@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Balseskin Reception Centre </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="../javascript/base.js"></script>
+        <script src="../javascript/link.js"></script>
+        <script src="../javascript/menu.js"></script>
+        
+        <link rel="stylesheet" href="../style/menu.css">
+    </head>
+
+    <body>
+        <div class="text-center bg-light w-75 p-4 mt-5" id="loginFirst"> 
+            Balseskin Reception Centre
+            <p id="login_message" style="visibility: visible;">You need to log in first</p>
+            <a class="btn btn-info" href="../login.html" role="button">Login</a>
+        </div>
+        <div class="all">
+            <div class="sidenav">
+                <div class="title">
+                    <a href='../index.html'>Balseskin Reception Centre</a>
+                </div>
+
+                <div class="line"></div>
+                 <a class="" onclick="logout()">Logout <i class="fa fa-sign-out float-right ml-2"></i></a>
+                
+
+                <button class="dropdown-btn ">Links 
+                    <i class="fa fa-caret-down ml-2"></i></button>
+                <div class="dropdown-container ">
+                    <div class="menuOption"><a href="/link/friends_of_centre.html"><i class="fa fa-globe m-2 linkIcon"></i>Friends of the Centre</a></div>
+                    <div class="menuOption"><a href="/link/information.html"><i class="fa fa-info m-2 linkIcon"></i>Information</a></div>
+                </div>
+
+                <a class="mb-7" href="../calendar2.html">Calendar</a>
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav mobile">
+                    <div class="row">
+                        <div class="col-10 pl-4">                
+                            <a class="text-white" href="../index.html">Balseskin Reception Centre</a>
+                        </div>
+                        <div class="logout text-primary col-2 bg-light pt-3" onclick="logout()"> 
+
+                            <i class="fa fa-sign-out"></i>
+
+                        </div> 
+                    </div>
+
+                    <div class="line"></div>
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav w-100">
+                            
+                           
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#" data-toggle="dropdown">
+                                    Links
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="/link/friends_of_centre.html">Friends of the Centre</a>
+                                    <a class="menuOption dropdown-item" href="/link/information.html">Information</a>
+                                </div>
+                            </li> 
+                            <li class="nav-item smallMenu">
+                                <a class="p-2 nav-link font-weight-bold smallScreen" href="../calendar2.html">
+                                    Calendar
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+            <div class="main">   
+                <div class="container mt-2">
+                    <div class="m-1">
+                        <h4 class="title mb-2 mt-2" id="titleMargin">Information</h4>
+                        <div class="gray-background mb-2">
+                            <div class="container w-100 p-3">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="heading1">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Access</a>									
+                                            </h2>
+                                        </div>
+                                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Access to pedestrian gate, buildings, bedrooms and social rooms are controlled by your Swipe Card issued upon arrival. </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Access for visitors is strictly controlled and between 09:00hrs and 22:00hrs.  All visitors must report to Reception.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading2">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse2">Activites</a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Please view Activities Noticeboard in Reception and also in Seomra Failte regarding on and off site activities.  </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading3">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse3">Addresss</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>
+                                                    Balseskin Reception Centre,
+                                                    St Margarets Road,
+                                                    Finglas, 
+                                                    Dublin 11. Eircode D11 FX93    Tel 01 8646291
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading4">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse4">Bed Linen</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                                            <div class="card-body">
+
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Bed Linen is provided on arrival by Reception.
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Should you require additional linen, please contact Reception.
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Dirty Bedlinen can be exchanged at reception.  </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading5">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse5">Bedrooms</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Entry to bedrooms is by use of swipe cards.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Bedrooms must be kept clean and tidy, cleaning equipment and materials are available at the Cleaning Station and Reception. </p> 
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Smoking is NOT PERMITTED inside Balseskin.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>A notice in your bedroom gives directions in the event of a fire.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>If you notice a maintenance issue in your bedroom/bathroom please contact Reception and we will do our utmost to rectify it.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>If anything in your bedroom/bathroom or around the Centre is broken please let us know and we will get our Maintenance Personnel to fix it. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading6">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse6">Baby</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Baby Cots/Baskets are available on request at Reception.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Baby milk and Bottle Sterilizer are available at reception </p>                                   
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Baby food is available at the Dining Area.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Nappies are available at Reception until you receive Social Welfare.</p>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading7">
+                                            <h2 class="mb-0">
+                                                <a  class="btn btn-link" data-toggle="collapse" data-target="#collapse7">Bus Services</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Balseskin offer a free bus service into Mountjoy Square.  Bus timetables are available at Reception. Tickets will be given out 45 minutes prior to the buses departure time. </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Public buses (83 & 40B) also run from the local bus stop to the city centre from 7am-11pm. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading8">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse8">Catering/Canteen</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p>Meal Times</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Breakfast: 08:00 to 10:00 </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Lunch: 12:30 to 14:00 </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Dinner: 17:00 to 18:30 </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i> If you have a special dietary need (ie. you are a diabetic, etc.) please contact a member of the catering staff who will cater for your special needs.  </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading9">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse9">Cleaning</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Remember This is Your Home, help us in keeping it clean and safe with a happy environment.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Remember to keep all cleaning materials out of the reach of children, as they may contain chemicals.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Cleaning materials are available at Reception and in your Social Room.  Should you require any additional materials please contact Balseskin Reception.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading10">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse10">Cleaning</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+                                            <div class="card-body">
+
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Parents are responsible for the care, safety and behaviour of their children at all times.</p>	
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Parents are not permitted to leave children alone in the Centre at any time when they go out, for whatever reason.  Proper arrangements must be in place for their care.  The Centre Staff/Management must be informed, and be satisfied with such arrangements. </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Please read the Child Protection Notice Board in the admin building.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Balseskin have an onsite Supervised Play room, please contact staff on site. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading11">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse11">Fire Safety</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
+                                            <div class="card-body">
+
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>A continuous siren alarm is the signal to evacuate the Building.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Fire instructions are posted in each bedroom and throughout the Centre. These instructions are to help you to understand what to do in the event of a fire</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>If the alarm sounds, leave the building and go to your assembly point and wait there until you are told to do otherwise.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Do not collect personal belongings.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Please keep fire exits clear at all time.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Fire Drills will be held on a regular basis at the Centre – Please assist where possible.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>If you discover a fire, please activate the nearest fire alarm call point and then leave the building immediately.  DO NOT TRY AND TACKLE THE FIRE YOURSELF. </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>You are required to co-operate with the management of the centre in the evacuation of the premises in the event of a fire or a fire drill.  Failure to co-operate will be considered a serious breach of House Rules and the Reception and Integration Agency will be notified.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading12">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse12">First Aid</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>First Aid is available from Reception.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>All treatments or use of first aid box must be reported to a member of Staff/Management.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>In an emergency contact Reception or any member of Staff/Management </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Balseskin Medical Centre is opened Monday to Friday. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading13">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse13">Laundry Room</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Washing machines and dryers are available for your use in the laundry room. </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Iron and ironing boards are available from Reception</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Washing tablets can be collected from the Reception office</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading14">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse14">Letter/Parcels</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Letters, parcels, etc will be available for collection at Reception.</p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>There is a Post Box at Reception for outgoing post.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading15">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse15">Medical</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Balseskin Reception Centre have a Medical Centre/Social Worker onsite.  For out of hour service please contact Reception where staff can organise appropriate transport to hospital. </p>                        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading16">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse16">Shopping</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Charlestown Shopping Centre in 10 minute walk from Balseskin, please ask at Reception for directions. </p>                        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading17">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse17">Toiletries</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Toilet paper, small soap, and shampoo are available at Reception when required.</p>                        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading18">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse18">Visitors</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionExample">
+                                            <div class="card-body">
+
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Visitors are only allowed on site (Admin Building) as follows:
+                                                    <br>
+                                                    Adults:     09am to 10pm 
+                                                    <br>
+                                                    Children:  09am to 6pm </p>
+                                                <p class="text-justify"> <i class="fa fa-minus mr-2"></i>Each visitor must sign in at Reception and adhere to the house rules. </p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

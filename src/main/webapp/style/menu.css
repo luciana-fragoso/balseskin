@@ -1,0 +1,259 @@
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #f8f9fa; 
+}
+
+.logout i {
+    color: #2D4760 !important;
+    font-size: 20px !important;
+    
+}
+
+
+.line {
+    border: 0.5px solid #f8f9fa;
+    opacity: 0.2;
+    margin: auto;
+}
+.title {
+   
+    width: 90%;
+    margin: auto;
+    background-color: #f8f9fa;
+    
+    font-weight: bold;
+    padding: 10px;  
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.title a {
+    color: #2D4760 !important; 
+    font-size: 24px !important;
+}
+.sidenav {
+    background-color: #2D4760;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.sidenav a, .dropdown-btn {
+    color: #F2EED7;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    margin-right: 4%;
+}
+
+.dropdown-btn{
+    color: #F2EED7;
+    border: none !important;
+}
+
+.linkIcon {
+    color: #76A5B7 ;
+
+}
+
+.menuOption a {
+    text-align: left;
+    margin-left: 2px;
+}
+.sidenav a:hover, .dropdown-btn:hover , .linkHover:hover {
+    background-color: #e4e7ff;
+    text-decoration: none;
+    color: #2D4760;
+}
+
+
+
+.active {
+    background-color:  #e4e7ff;
+    color: #2D4760 ;
+    border: none !important;
+
+}
+
+
+.active:hover {
+    text-decoration: underline;
+    border: none !important;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 0px;
+}
+
+.dropdown-container a {
+    font-size: 16px;
+}
+.mobile-container {
+    visibility: hidden;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media only screen and (max-width: 760px) {
+    .globe {
+        width: 60%;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .globe {
+        width: 50%;
+    }
+    .smallMenu{
+        width: 100%;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        padding: 0.01em 16px;
+    }
+    .sidenav {
+        visibility: hidden;
+    }
+    .mobile-container {
+        visibility: visible;
+        max-width: 500px;
+        margin: auto;
+
+        color: white;
+        border-radius: 10px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #2D4760;
+        color: #f8f9fa;
+        position: relative;
+    }
+
+    .dropdown-menu {
+        margin-bottom: 4% !important;
+        border-radius: 10px;
+    }
+    .dropdown-menu a {
+        padding: 2px !important
+    }
+
+
+
+    .topnav a {     
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .nav-item a {
+        padding: 2px;
+        font-size: 14px;
+        color: #2D4760;
+    }
+
+    .menuOption {
+        font-size: 14px !important;
+        margin-left: 4px !important;
+    }
+
+    .nav-item a:active {
+        color: #2D4760;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.main {
+    margin-left: 202px !important;
+}
+
+.gray-background{
+    border-radius: 25px;
+    padding: 2%;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .main {
+        margin-left:0px  !important;  
+        
+    }    
+
+}
+
+
+
+#loginFirst{
+    margin: auto;
+}
+
+.mb-0 a{
+    font-weight: bold !important;
+    color: #0275d8 !important;
+    text-decoration: none !important;
+    
+}
+.accordionLinks{
+    margin-left: 1%;
+    color: #000000;
+}
+.card-header{
+    margin: 0px !important;
+    padding: 0px !important; 
+    text-align: left;
+}
+.table-scroll {
+    overflow-y: auto; 
+    height: fit-content;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+   
+
+    .helpful-links{
+        text-decoration: none;
+    }
+    
+    
+
+}

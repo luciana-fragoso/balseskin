@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Balseskin Reception Centre </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="../javascript/base.js"></script>
+        <script src="../javascript/event.js"></script>      
+        <script src="../javascript/menu.js"></script>
+        
+        <link rel="stylesheet" href="../style/menu.css">
+    </head>
+
+    <body>
+        <div class="text-center bg-light w-75 p-4 mt-5" id="loginFirst"> 
+            Balseskin Reception Centre
+            <p id="login_message" style="visibility: visible;">You need to log in first</p>
+            <a class="btn btn-info" href="../login.html" role="button">Login</a>
+        </div>
+        <div class="all">
+            <div class="sidenav">
+                <div class="title">
+                    <a href='../index.html'>Balseskin Reception Centre</a>
+                </div>
+
+                <div class="line"></div>
+                <a class="" onclick="logout()">Logout <i class="fa fa-sign-out float-right ml-2"></i></a>
+                <button class="dropdown-btn ">User 
+                    <i class="fa fa-caret-down ml-2"></i></button>
+                <div class="dropdown-container ">
+                    <div class="menuOption"><a href="../user/user_add.html"><i class="fa fa-plus m-2 linkIcon"></i>Add user</a></div>
+                    <div class="menuOption"><a href="../user/user_edit.html"><i class="fa fa-refresh m-2 linkIcon"></i>Edit user</a></div>
+                    <div class="menuOption"><a href="../user/user_remove.html"><i class="fa fa-minus m-2 linkIcon"></i>Remove user</a></div>
+                </div>
+                <button class="dropdown-btn">Event 
+                    <i class="fa fa-caret-down ml-2"></i>
+                </button>
+                <div class="dropdown-container">
+                    <div class="menuOption"><a href="#"><i class="fa fa-plus m-2 linkIcon"></i>Add event</a></div>
+                    <div class="menuOption"><a href="event_edit.html"><i class="fa fa-refresh m-2 linkIcon"></i>Edit event</a></div>
+                    <div class="menuOption"><a href="event_remove.html"><i class="fa fa-minus m-2 linkIcon"></i>Remove event</a></div>
+                    <div class="menuOption"><a href="../calendar.html"><i class="fa fa-calendar m-2 linkIcon"></i>See calendar</a></div>
+                </div>
+
+                <button class="dropdown-btn ">Links 
+                    <i class="fa fa-caret-down ml-2"></i></button>
+                <div class="dropdown-container ">
+                    <div class="menuOption"><a href="../link/friends_of_centre.html"><i class="fa fa-globe m-2 linkIcon"></i>Friends of the Centre</a></div>
+                    <div class="menuOption"><a href="../link/information.html"><i class="fa fa-info m-2 linkIcon"></i>Information</a></div>
+                </div>
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav mobile">
+                    <div class="row">
+                        <div class="col-10 pl-4">                
+                            <a class="text-white" href="../index.html">Balseskin Reception Centre</a>
+                        </div>
+                        <div class="logout text-primary col-2 bg-light pt-3" onclick="logout()"> 
+
+                            <i class="fa fa-sign-out"></i>
+
+                        </div> 
+                    </div>
+
+                    <div class="line"></div>
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#" data-toggle="dropdown">
+                                    Users
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="../user/user_add.html">Add user</a>
+                                    <a class="menuOption dropdown-item" href="../user/user_edit.html">Edit user</a>
+                                    <a class="menuOption dropdown-item" href="../user/user_remove.html">Remove user</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#"  data-toggle="dropdown">
+                                    Events
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="#">Add event</a>
+                                    <a class="menuOption dropdown-item" href="event_edit.html">Edit event</a>
+                                    <a class="menuOption dropdown-item" href="event_remove.html">Remove event</a>
+                                    <a class="menuOption dropdown-item" href="../calendar.html">See Calendar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#" data-toggle="dropdown">
+                                    Links
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="../link/friends_of_centre.html">Friends of the Centre</a>
+                                    <a class="menuOption dropdown-item" href="../link/information.html">Information</a>
+                                </div>
+                            </li> 
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+            <div class="main">    
+
+                <div  id="event_add_div">
+
+                    <div class="container mt-2">
+                        <div class="m-1">
+
+
+                            <h4 class="title ml-0 pl-0" id="titleMargin">Adding event</h4>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> 
+                                        <i class="fa fa-font" style="font-size:18px" ></i>  
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Title" id="event_title_add">
+
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-calendar" style="font-size:18px"></i></span>
+                                </div>
+                                <input type="date" id="event_date_add" name="date_event" class="form-control">
+
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-quote-left" style="font-size:16px"></i></span>
+                                </div>
+                                <textarea class="form-control" id="event_description_add" rows="5"></textarea>
+                            </div>
+
+
+
+
+
+
+                            <div class="col-md-12 text-center buttonOK">
+                                <p id='add_error_message' class='text-danger text-center font-weight-bold' style='visibility: visible'></p>
+                                <button type="submit" class="btn btn-outline-secondary w-50" id="event_add_button">OK</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Balseskin Reception Centre </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="../javascript/base.js"></script>
+        <script src="../javascript/link.js"></script>
+        <script src="../javascript/menu.js"></script>
+        
+        <link rel="stylesheet" href="../style/menu.css">
+    </head>
+
+    <body>
+        <div class="text-center bg-light w-75 p-4 mt-5" id="loginFirst"> 
+            Balseskin Reception Centre
+            <p id="login_message" style="visibility: visible;">You need to log in first</p>
+            <a class="btn btn-info" href="../login.html" role="button">Login</a>
+        </div>
+        <div class="all">
+            <div class="sidenav">
+                <div class="title">
+                    <a href='../index.html'>Balseskin Reception Centre</a>
+                </div>
+
+                <div class="line"></div>
+                <a class="mb-7" href="login.html">Login</a>
+                
+
+                <button class="dropdown-btn ">Links 
+                    <i class="fa fa-caret-down ml-2"></i></button>
+                <div class="dropdown-container ">
+                    <div class="menuOption"><a href="#"><i class="fa fa-globe m-2 linkIcon"></i>Friends of the Centre</a></div>
+                    <div class="menuOption"><a href="information.html"><i class="fa fa-info m-2 linkIcon"></i>Information</a></div>
+                </div>
+
+                <a class="mb-7" href="../calendar2.html">Calendar</a>
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav mobile">
+                    <div class="row">
+                        <div class="col-10 pl-4">                
+                            <a class="text-white" href="../index.html">Balseskin Reception Centre</a>
+                        </div>
+                        <div class="logout text-primary col-2 bg-light pt-3" onclick="logout()"> 
+
+                            <i class="fa fa-sign-out"></i>
+
+                        </div> 
+                    </div>
+
+                    <div class="line"></div>
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav w-100">
+                            
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#" data-toggle="dropdown">
+                                    Links
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="#">Friends of the Centre</a>
+                                    <a class="menuOption dropdown-item" href="information.html">Information</a>
+                                </div>
+                            </li> 
+                            <li class="nav-item smallMenu">
+                                <a class="p-2 nav-link font-weight-bold smallScreen" href="../calendar2.html">
+                                    Calendar
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+            <div class="main">   
+                <div class="container mt-2">
+                    <div class="m-1">
+                        <h4 class="title mb-2 mt-2" id="titleMargin">Friends of the Centre</h4>
+                        <div class="gray-background mb-2">
+                            <div class="container w-100 p-3">
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="heading1">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapse1">Education</a>									
+                                            </h2>
+                                        </div>
+                                        <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <h6 class="m-0">Colleges</h6>
+                                                <i class="fa fa-angle-right mr-2"></i><a class="accordionLinks" href="https://www.etbi.ie/" target="_blank">ETBI</a><br>
+                                                <i class="fa fa-angle-right mr-2"></i><a class="accordionLinks" href="https://www.dcu.ie" target="_blank">DCU</a><br>
+                                                <i class="fa fa-angle-right mr-2"></i><a class="accordionLinks" href="https://www.ucd.ie/" target="_blank">UCD</a><br>
+                                                <i class="fa fa-angle-right mr-2"></i><a class="accordionLinks" href="https://www.dit.ie/" target="_blank">DIT</a><br>
+
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.education.ie/en/find-a-school" target="_blank">Primary/Seconday School</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.librariesireland.ie/" target="_blank">Local Libraries</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading2">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse2">Sporting</a>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.gaa.ie/" target="_blank">Local Sports Clubs</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.fai.ie/" target="_blank">Soccer</a><br>
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.athleticsireland.ie/" target="_blank">Athletics Ireland</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.sportireland.ie/" target="_blank">Sport  Ireland</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading3">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse3">Information & Safety</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.citizensinformation.ie/en/" target="_blank">Citizens Information</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.volunteer.ie/" target="_blank">Volunteering</a><br>
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="http://iomireland.ie/" target="_blank">IOM Repatriation</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.garda.ie/en/" target="_blank">GARDA</a><br>
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://rnli.org/pages/ppc/beach-safety/beach-advice-2020?gclid=Cj0KCQjwo6D4BRDgARIsAA6uN1-ql3Lg9wgAzHQ_EIr_Ym_7xmW_3-9GKipqsBeeMib6rNLiD83LuwYaAluBEALw_wcB" target="_blank">Irish Water Safety</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading4">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse4">Arts & Culture</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.focloir.ie/" target="_blank">Irish Language</a></br>  
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading5">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse5">Children</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.youthworkireland.ie/who-we-are/find-us/find-your-local-youth-club" target="_blank">Youth Clubs</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.barnardos.ie/" target="_blank">Barnardos</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.ispcc.ie/" target="_blank">ISPCC</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.childline.ie/" target="_blank">Childline</a></br>                                                                            
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading6">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse6">Parenting</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www2.hse.ie/wellbeing/child-health/parenting-courses.html" target="_blank">Parenting Courses</a></br>                                      
+                                                <i class="fa fa-angle-right  mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.newcommunities.ie/" target="_blank">New Communities Partnership</a></br>                                                                            
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.tusla.ie/services/family-community-support/family-resource-centres/" target="_blank">Family Resource Centres</a></br>                                                                            
+                                                <br>
+                                                <h6 class="m-0">Breastfeeding</h6>
+                                                <i class="fa fa-angle-right mr-2"></i><a class="accordionLinks mb-1" href="https://www.aptaclub.ie/baby/diet-and-nutrition/breastfeeding.html" target="_blank">AptaCLUB</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2"></i><a class="accordionLinks mb-1" href="https://www2.hse.ie/babies-and-toddlers/breastfeeding/" target="_blank">HSE</a></br>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading7">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse7">Depto. Of Justice</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="http://www.ria.gov.ie/ " target="_blank">RIA</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="http://www.inis.gov.ie/en/INIS/Pages/labour-market-access" target="_blank">Work Permit</a></br>                                                                            
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="http://www.inis.gov.ie/en/INIS/Pages/apply-for-asylum" target="_blank">INIS</a></br>   
+                                                <i class="fa fa-download mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="files/pps.pdf" target="_blank">PPS Form (download)</a></br>                                                                            
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading8">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse8">Health</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.hse.ie/eng/" target="_blank">HSE</a></br>                                      
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.pieta.ie/" target="_blank">PIETA</a></br>                                                                            
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://akidwa.ie/" target="_blank">Akidwa</a></br>        
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://spirasi.ie/" target="_blank">Spirasi</a></br>                                      
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.hivireland.ie/" target="_blank">HIV Ireland</a></br>                                                                            
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.ruhama.ie/" target="_blank">Ruhama</a></br>     
+                                                        <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.aware.ie/" target="_blank">Aware</a></br>     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading9">
+                                            <h2 class="mb-0">
+                                                <a type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse9">Advocacy</a>                     
+                                            </h2>
+                                        </div>
+                                        <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                                            <div class="card-body" style="padding-top: 0px;">
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.oco.ie/" target="_blank">Ombudsman for Children</a></br>                                      
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.ombudsman.ie/" target="_blank">Ombudsman</a></br>                                                                            
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.legalaidboard.ie/en/" target="_blank">Legal Services</a></br>        
+                                                <i class="fa fa-angle-right mr-2 ml-0 mt-4"></i><a class="accordionLinks mb-1" href="https://www.unhcr.org/en-ie/" target="_blank">UNHCR</a></br>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </body>
+                </html> 

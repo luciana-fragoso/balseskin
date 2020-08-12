@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Balseskin Reception Centre </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="../javascript/user.js"></script>
+        <script src="../javascript/base.js"></script>    
+        <script src="../javascript/menu.js"></script>
+        
+        <link rel="stylesheet" href="../style/menu.css">
+    </head>
+
+    <body>
+        <div class="text-center bg-light w-75 p-4 mt-5" id="loginFirst"> 
+            Balseskin Reception Centre
+            <p id="login_message" style="visibility: visible;">You need to log in first</p>
+            <a class="btn btn-info" href="../login.html" role="button">Login</a>
+        </div>
+        <div class="all">
+            <div class="sidenav">
+                <div class="title">
+                    <a href='../index.html'>Balseskin Reception Centre</a>
+                </div>
+
+                <div class="line"></div>
+                <a class="" onclick="logout()">Logout <i class="fa fa-sign-out float-right ml-2"></i></a>
+                <button class="dropdown-btn ">User 
+                    <i class="fa fa-caret-down ml-2"></i></button>
+                <div class="dropdown-container ">
+                    <div class="menuOption"><a href="user_add.html"><i class="fa fa-plus m-2 linkIcon"></i>Add user</a></div>
+                    <div class="menuOption"><a href="user_edit.html#"><i class="fa fa-refresh m-2 linkIcon"></i>Edit user</a></div>
+                    <div class="menuOption"><a href="#"><i class="fa fa-minus m-2 linkIcon"></i>Remove user</a></div>
+                </div>
+                <button class="dropdown-btn">Event 
+                    <i class="fa fa-caret-down ml-2"></i>
+                </button>
+                <div class="dropdown-container">
+                    <div class="menuOption"><a href="../event/event_add.html"><i class="fa fa-plus m-2 linkIcon"></i>Add event</a></div>
+                    <div class="menuOption"><a href="../event/event_edit.html"><i class="fa fa-refresh m-2 linkIcon"></i>Edit event</a></div>
+                    <div class="menuOption"><a href="../event/event_remove.html"><i class="fa fa-minus m-2 linkIcon"></i>Remove event</a></div>
+                    <div class="menuOption"><a href="../calendar.html"><i class="fa fa-calendar m-2 linkIcon"></i>See calendar</a></div>
+                </div>
+
+                <button class="dropdown-btn ">Links 
+                    <i class="fa fa-caret-down ml-2"></i></button>
+                <div class="dropdown-container ">
+                    <div class="menuOption"><a href="../link/friends_of_centre.html"><i class="fa fa-globe m-2 linkIcon"></i>Friends of the Centre</a></div>
+                    <div class="menuOption"><a href="../link/information.html"><i class="fa fa-info m-2 linkIcon"></i>Information</a></div>
+                </div>
+
+                <div class="line">
+                </div>
+            </div>
+
+            <div class="mobile-container">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav mobile">
+                    <div class="row">
+                        <div class="col-10 pl-4">                
+                            <a class="text-white" href="../index.html">Balseskin Reception Centre</a>
+                        </div>
+                        <div class="logout text-primary col-2 bg-light pt-3" onclick="logout()"> 
+
+                            <i class="fa fa-sign-out"></i>
+
+                        </div> 
+                    </div> <div class="line"></div>
+                    <nav class="navbar navbar-expand-sm">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#" data-toggle="dropdown">
+                                    Users
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="user_add.html">Add user</a>
+                                    <a class="menuOption dropdown-item" href="user_edit.html">Edit user</a>
+                                    <a class="menuOption dropdown-item" href="#">Remove user</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#"  data-toggle="dropdown">
+                                    Events
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="../event/event_add.html">Add event</a>
+                                    <a class="menuOption dropdown-item" href="../event/event_edit.html">Edit event</a>
+                                    <a class="menuOption dropdown-item" href="../event/event_remove.html">Remove event</a>
+                                    <a class="menuOption dropdown-item" href="../calendar.html">See Calendar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown smallMenu" >
+                                <a class="p-2 nav-link dropdown-toggle font-weight-bold smallScreen" href="#" data-toggle="dropdown">
+                                    Links
+                                </a>
+                                <div class="dropdown-menu p-1">
+                                    <a class="menuOption dropdown-item" href="../link/friends_of_centre.html">Friends of the Centre</a>
+                                    <a class="menuOption dropdown-item" href="../link/information.html">Information</a>
+                                </div>
+                            </li> 
+
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="container">
+                    <div class="m-1 ">
+
+                        <h4 class="title ml-0 pl-0" id="titleMargin">Removing User</h4>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-search" style="font-size:16px" ></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Searh for user" id="username_search_remove">
+                        </div>
+                        <div class="col-md-12 text-center buttonOK">
+                            <p id="remove_error_message" class="text-danger text-center font-weight-bold" style="visibility: hidden"></p>
+                            <button type="submit" class="btn btn-outline-secondary w-50 mt-2 mb-4" id="user_remove_button">OK</button>
+                        </div>
+
+                        <div  id="remove_user_div" class="gray-background" style="visibility:hidden">
+                            <div class="col-md-12 text-center">
+                                <div class="form-group " >
+                                    <label class="font-weight-bold" for="username_remove">Username</label>
+                                    <label class="form-control" id="username_remove_label"></label>
+                                </div>
+                                <div class="form-group" style="margin-left: 2%">
+                                    <label class="font-weight-bold" for="type_remove">Type</label>
+                                    <label class="form-control" id="type_remove_label"></label>
+                                </div>
+                            </div>
+
+                            <p id="final_remove_error_message"  class="text-danger text-center font-weight-bold m-0 p-0" style="visibility: hidden"></p>
+                            <div class="btn-toolbar justify-content-center mb-3" role="toolbar">
+                                <div class="btn-group mr-2" role="group">
+                                    <button type="submit" class="btn btn-primary" id="user_remove_button_cancel">&nbsp;CANCEL&nbsp;</button>
+                                </div>
+
+                                <div class="btn-group" role="group">
+                                    <button type="submit" class="btn btn-primary" id="user_remove_button_confirm">&nbsp;CONFIRM&nbsp;</button>
+                                </div>
+                            </div> 
+
+
+
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
