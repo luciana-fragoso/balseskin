@@ -82,7 +82,7 @@ $(function () {
                     document.getElementById("remove_error_message").innerHTML = "";
                     document.getElementById("username_search_remove").value = "";
                     document.getElementById("username_remove_label").innerHTML = user.username;
-                    document.getElementById("email_edit").value = user.email;
+                  
                     document.getElementById("type_remove_label").innerHTML = user.type;
                     if (user.type !== "resident") {
                         document.getElementById("remove_error_message").innerHTML = "You can't remove this user";
@@ -165,7 +165,7 @@ $(function () {
                     document.getElementById("update_error_message").style.visibility = "visible";
                 } else {
                     if (user.type !== "resident") {
-                        document.getElementById("update_error_message").innerHTML = "You can't remove this user";
+                        document.getElementById("update_error_message").innerHTML = "You can't edit this user";
                         document.getElementById("update_error_message").style.visibility = "visible";
                     } else {
                         document.getElementById("update_error_message").visibility = "hidden";
